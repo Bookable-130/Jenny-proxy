@@ -2,16 +2,37 @@
 <head>
 </head>
 <body>
-  <div id='photo-app'> </div>
-  <div class='rc-wrapper'>
-    <div id='reviews-app'> </div>
-    <div id='calendar-app' > </div>
-  </div>
+  <div id='photo-gallery-app'> </div>
+  <div id='calendar-app' > </div>
+  <div id='reviews-app'> </div>
+  <div id='more-places-app'> </div>
+
   <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
   <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
-  <script src="http://localhost:3001/photogallery/1/bundle.js"></script>
-  <script src="http://localhost:3002/calender/1/bundle.js"></script>
-  <script src="http://localhost:3003/review/1/bundle.js"></script>
-  <script src="http://localhost:3004/carousel/1/bundle.js"></script>
+  <script src="http://localhost:3001/rooms/1/bundle.js"></script>
+  <script src="http://localhost:3002/bundle.js"></script>
+  <script src="http://localhost:3003/bundle.js"></script>
+  <script src="http://localhost:3004/bundle.js"></script>
+
+
+  <script>
+     ReactDOM.render(
+      React.createElement(PhotoGalley),
+      document.getElementById('photo-gallery-app')
+    );
+    ReactDOM.render(
+      React.createElement(CalenderApp),
+      document.getElementById('calendar-app')
+    );
+    ReactDOM.render(
+      React.createElement(ReviewApp),
+      document.getElementById('reviews-app')
+    );
+    ReactDOM.render(
+      React.createElement(MorePlaceApp),
+      document.getElementById('more-places-app')
+    )
+
+  </script>
 </body>
 </html>
