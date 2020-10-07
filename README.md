@@ -1,6 +1,6 @@
 # Project Name
 
-> Project description
+> Home Leasing Web Application
 
 ## Related Projects
 
