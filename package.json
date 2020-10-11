@@ -1,5 +1,5 @@
 {
-  "name": "Bookable-proxy",
+  "name": "Bookable-Proxy",
   "version": "",
   "description": "A proxy to connect all four modules",
   "author": "Jinyeong Park",
@@ -8,16 +8,15 @@
     "node": ">=6.13.0"
   },
   "scripts": {
-    "start:dev": "nodemon server/index.js",
-    "start": "node server/index.js"
+    "start:prod": "node server/index.js",
+    "build:dev": "webpack -d --watch",
+    "start:dev": "nodemon server/index.js"
   },
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "nodemon": "^2.0.4",
-    "path": "^0.12.7",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "path": "^0.12.7"
   },
   "devDependencies": {
     "eslint-config-hackreactor": "git://github.com/reactorcore/eslint-config-hackreactor",

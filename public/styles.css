@@ -25,7 +25,25 @@
   margin-right: 150px;
 }
 
+#calendar-with-description-container {
+  display: flex;
+  justify-content: center;
+}
+
+#calendar-with-description {
+  display: flex;
+  justify-content: space-between;
+  width: 1170px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  width: 100%
+}
+
 /* More places app */
 #more-places-app {
   background-color: rgb(247,247,247);
+  width: 100%;
 }

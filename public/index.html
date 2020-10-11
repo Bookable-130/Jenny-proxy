@@ -1,8 +1,9 @@
-<!DOCTYPE html>
+<!-- docker -->
+<html>
   <head>
-
-  <link rel="stylesheet" href="./styles.css">
-  <link rel="stylesheet" href="http://localhost:3002/style.css">
+    <title>Bookable</title>
+    <link rel="stylesheet" href="http://3.138.89.74:3002/style.css">
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <div id='header'>
@@ -10,14 +11,53 @@
       <img class='search' src='https://bookable-rooms-images.s3.us-east-2.amazonaws.com/search.png'>
       <img class='account' src='https://bookable-rooms-images.s3.us-east-2.amazonaws.com/account.png'>
     </div>
-    <div id='photo-gallery-app'> </div>
-    <div id='CalendarApp'> </div>
-    <div id='reviews-app'> </div>
-    <div id='more-places-app'> </div>
 
-    <script src="http://localhost:3001/rooms/1/bundle.js"></script>
-    <script src="http://localhost:3002/bundle.js"></script>
-    <script src="http://localhost:3003/bundle.js"></script>
-    <script src="http://localhost:3004/bundle.js"></script>
+    <div id="photo-gallery-app"></div>
+    <div id="calendar-with-description-container">
+      <div id="calendar-with-description">
+        <img src="./images/room-description.png"/>
+        <div id="CalendarApp"></div>
+      </div>
+    </div>
+
+    <div class="center">
+      <img src="./images/line.png"/>
+    </div>
+
+    <div id="reviews-app"></div>
+
+    <div class="center">
+      <img src="./images/line.png"/>
+    </div>
+    <div class="center">
+      <img src="./images/location.png"/>
+    </div>
+    <div class="center">
+      <img src="./images/more-about-location.png"/>
+    </div>
+    <div class="center">
+      <img src="./images/about-host.png"/>
+    </div>
+    <div class="center">
+      <img src="./images/things-to-know.png"/>
+    </div>
+
+    <div id="more-places-app"></div>
+
+    <div class="center">
+      <img src="./images/explore-other-options.png"/>
+    </div>
+    <div class="center">
+      <img src="./images/bottom-bar.png"/>
+    </div>
+
+    <script src="http://54.219.99.93:3001/rooms/1/bundle.js"></script>
+    <script src="http://3.138.89.74:3002/bundle.js"></script>
+    <script src="http://3.136.76.170:3003/bundle.js"></script>
+    <script src="http://13.52.57.57:3004/bundle.js"></script>
   </body>
 </html>
+
+
+
+
