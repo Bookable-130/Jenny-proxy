@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const port=   3000;
+const port=   3010;
 const { createProxyMiddleware } = require('http-proxy-middleware')
 
 app.use('/rooms/:roomId', express.static(`${__dirname}/../public`));
