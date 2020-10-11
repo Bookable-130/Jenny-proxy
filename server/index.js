@@ -26,7 +26,3 @@ app.use('/api/collection_name', createProxyMiddleware({ target: `http://13.52.57
 app.listen(port, () => {
   console.log(`listening on port ${port}`);
 });
-
-
-
-
