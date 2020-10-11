@@ -10,4 +10,4 @@ RUN npm install
 
 EXPOSE 3010
 
-CMD ["npm", "start"]
+CMD ["npm", "run", "start:prod"]
