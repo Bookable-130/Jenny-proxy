@@ -5,9 +5,6 @@ const { createProxyMiddleware } = require('http-proxy-middleware')
 
 app.use('/rooms/:roomId', express.static(`${__dirname}/../public`));
 
-app.listen( port, () => {
-  console.log(`server running at http://localhost:${port}`)
-})
 
 // Photo-gallery
 app.use('/api/photogallery/:roomId', createProxyMiddleware({ target: `http://54.219.99.93:3001/`, changeOrigin: true }));
